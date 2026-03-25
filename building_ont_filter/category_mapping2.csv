@@ -1,0 +1,253 @@
+original_cat,cat_l2,cat_l1
+candy,candy & gummy,sweets & confectionery
+"popcorn, peanuts, seeds & related snacks",popcorn & puffed snacks,snacks
+cookies & biscuits,cookies & biscuits,baked goods
+breads & buns,bread,grains & pasta
+"pickles, olives, peppers & relishes","pickles, olives & peppers",vegetables
+cheese,cheese,dairy & eggs
+"cakes, cupcakes, snack cakes",cakes & pastries,baked goods
+"seasoning mixes, salts, marinades & tenderizers",seasoning & spices,condiments & sauces
+ice cream & frozen yogurt,ice cream & frozen yogurt,dairy & eggs
+"chips, pretzels & snacks",chips & crisps,snacks
+other snacks,other snacks,snacks
+dips & salsa,salsa & dips,condiments & sauces
+soda,soda & soft drinks,beverages
+pasta by shape & type,pasta & noodles,grains & pasta
+chocolate,chocolate,sweets & confectionery
+pre packaged fruit & vegetables,fresh vegetables,vegetables
+cereal,cereal,grains & pasta
+yogurt,yogurt,dairy & eggs
+"ketchup, mustard, bbq & cheese sauce",ketchup & mustard,condiments & sauces
+wholesome snacks,other snacks,snacks
+baking decorations & dessert toppings,other snacks,snacks
+salad dressing & mayonnaise,salad dressing & mayonnaise,condiments & sauces
+other drinks,other beverages,beverages
+frozen appetizers & hors d'oeuvres,other snacks,snacks
+"snack, energy & granola bars",snack bars,snacks
+frozen dinners & entrees,frozen dinners & entrees,prepared & frozen meals
+crackers & biscotti,crackers,baked goods
+"pepperoni, salami & cold cuts",processed meats & cold cuts,meat
+"sausages, hotdogs & brats",sausages & hot dogs,meat
+"jam, jelly & fruit spreads",jams & spreads,sweets & confectionery
+"oriental, mexican & ethnic sauces",cooking sauces,condiments & sauces
+frozen fish & seafood,frozen fish & seafood,fish & seafood
+water,water,beverages
+frozen vegetables,frozen vegetables,vegetables
+herbs & spices,seasoning & spices,condiments & sauces
+"cake, cookie & cupcake mixes",baking mixes,baked goods
+canned vegetables,canned vegetables,vegetables
+powdered drinks,powdered drinks,beverages
+other soups,prepared soup,soups
+prepared pasta & pizza sauces,cooking sauces,condiments & sauces
+vegetable & cooking oils,vegetable & cooking oils,fats & oils
+pizza,pizza,prepared & frozen meals
+other meats,other meats,meat
+other deli,processed meats & cold cuts,meat
+other cooking sauces,cooking sauces,condiments & sauces
+iced & bottle tea,tea,beverages
+other frozen desserts,dairy desserts,dairy & eggs
+milk,milk,dairy & eggs
+chewing gum & mints,chewing gum & mints,sweets & confectionery
+syrups & molasses,honey & syrups,sweets & confectionery
+frozen fruit & fruit juice concentrates,frozen vegetables,vegetables
+canned soup,canned soup,soups
+"granulated, brown & powdered sugar",sugar,sweets & confectionery
+plant based milk,plant-based milk,plant-based alternatives
+butter & spread,butter & cream,dairy & eggs
+tea bags,tea,beverages
+"energy, protein & muscle recovery drinks",energy & sport drinks,beverages
+canned & bottled beans,canned beans,legumes & beans
+canned seafood,canned & smoked fish,fish & seafood
+fish & seafood,fresh fish,fish & seafood
+flours & corn meal,flour & corn meal,grains & pasta
+other grains & seeds,other grains,grains & pasta
+canned fruit,canned & preserved fruits,fruits
+mexican dinner mixes,prepared meals,prepared & frozen meals
+nut & seed butters,jams & spreads,sweets & confectionery
+vegetable and lentil mixes,prepared meals,prepared & frozen meals
+frozen bread & dough,bread,grains & pasta
+alcohol,alcoholic beverages,beverages
+"entrees, sides & small meals",prepared meals,prepared & frozen meals
+tomatoes,fresh vegetables,vegetables
+deli salads,salads,vegetables
+all noodles,pasta & noodles,grains & pasta
+milk additives,milk,dairy & eggs
+frozen patties and burgers,frozen dinners & entrees,prepared & frozen meals
+rice,rice,grains & pasta
+puddings & custards,dairy desserts,dairy & eggs
+bread & muffin mixes,baking mixes,baked goods
+crusts & dough,crusts & dough,baked goods
+honey,honey & syrups,sweets & confectionery
+"gelatin, gels, pectins & desserts",dairy desserts,dairy & eggs
+prepared subs & sandwiches,sandwiches & wraps,prepared & frozen meals
+"bacon, sausages & ribs",processed meats & cold cuts,meat
+baking additives & extracts,baking additives & extracts,baked goods
+pasta dinners,frozen dinners & entrees,prepared & frozen meals
+cooked & prepared,prepared meals,prepared & frozen meals
+cream,butter & cream,dairy & eggs
+"french fries, potatoes & onion rings",other snacks,snacks
+flavored rice dishes,prepared meals,prepared & frozen meals
+canned meat,processed meats & cold cuts,meat
+prepared soups,prepared soup,soups
+sushi,prepared meals,prepared & frozen meals
+frozen prepared sides,frozen dinners & entrees,prepared & frozen meals
+"frozen breakfast sandwiches, biscuits & meals",frozen dinners & entrees,prepared & frozen meals
+eggs & egg substitutes,eggs,dairy & eggs
+chili & stew,prepared meals,prepared & frozen meals
+pizza mixes & other dry dinners,baking mixes,baked goods
+sport drinks,energy & sport drinks,beverages
+liquid water enhancer,other beverages,beverages
+"poultry, chicken & turkey",other poultry,poultry
+flavored snack crackers,crackers,baked goods
+lunch snacks & combinations,other snacks,snacks
+prepared wraps and burittos,sandwiches & wraps,prepared & frozen meals
+vegetarian frozen meats,frozen dinners & entrees,prepared & frozen meals
+gravy mix,seasoning & spices,condiments & sauces
+plant based water,plant-based other,plant-based alternatives
+pastry shells & fillings,cakes & pastries,baked goods
+canned tuna,canned & smoked fish,fish & seafood
+sauces/spreads/dips/condiments,cooking sauces,condiments & sauces
+coffee,coffee,beverages
+biscuits/cookies,cookies & biscuits,baked goods
+other condiments,seasoning & spices,condiments & sauces
+stuffing,prepared meals,prepared & frozen meals
+fish  unprepared/unprocessed,fresh fish,fish & seafood
+"frozen bacon, sausages & ribs",sausages & hot dogs,meat
+"frozen poultry, chicken & turkey",frozen dinners & entrees,prepared & frozen meals
+"frozen sausages, hotdogs & brats",sausages & hot dogs,meat
+meat/poultry/other animals  unprepared/unprocessed,other meats,meat
+canned condensed soup,canned soup,soups
+"pancakes, waffles, french toast & crepes",cakes & pastries,baked goods
+meat/poultry/other animals  prepared/processed,processed meats & cold cuts,meat
+specialty formula supplements,dietary supplements,supplements
+shellfish unprepared/unprocessed,shellfish,fish & seafood
+vegetables and vegetable products,fresh vegetables,vegetables
+other frozen meats,frozen dinners & entrees,prepared & frozen meals
+meal replacement supplements,dietary supplements,supplements
+"breakfast sandwiches, biscuits & meals",sandwiches & wraps,prepared & frozen meals
+bread,bread,grains & pasta
+fruits and fruit juices,fresh fruits,fruits
+finfish and shellfish products,frozen fish & seafood,fish & seafood
+baked products,baking mixes,baked goods
+sweets,other snacks,snacks
+fast foods,fast foods & restaurant foods,prepared & frozen meals
+"soups, sauces, and gravies",prepared soup,soups
+dough based products / meals,crusts & dough,baked goods
+fish,fresh fish,fish & seafood
+herbs/spices/extracts,seasoning & spices,condiments & sauces
+snacks,other snacks,snacks
+processed cereal products,cereal,grains & pasta
+liquor and cocktails,alcoholic beverages,beverages
+sweet bakery products,cakes & pastries,baked goods
+non alcoholic beverages  ready to drink,other beverages,beverages
+health care,undefined,other
+other vegetables and combinations,fresh vegetables,vegetables
+"biscuits, muffins, quick breads",bread,grains & pasta
+vegetables  prepared/processed,canned vegetables,vegetables
+sausages and luncheon meats,processed meats & cold cuts,meat
+dairy and egg products,eggs,dairy & eggs
+nut and seed products,nuts & seeds,snacks
+baby foods,baby food,baby food
+breakfast drinks,other beverages,beverages
+savoury bakery products,bread,grains & pasta
+cereal grains and pasta,cereal,grains & pasta
+weight control,dietary supplements,supplements
+legumes and legume products,dried legumes,legumes & beans
+green supplements,dietary supplements,supplements
+baking/cooking mixes/supplies,baking mixes,baked goods
+meat mixed dishes,prepared meals,prepared & frozen meals
+spices and herbs,seasoning & spices,condiments & sauces
+miscellanious,other,other
+digestive & fiber supplements,dietary supplements,supplements
+deli and cured meat sandwiches,sandwiches & wraps,prepared & frozen meals
+"lamb, veal, and game products",lamb & game,meat
+confection & snacks,other snacks,snacks
+"crackers, excludes saltines",crackers,baked goods
+cakes and pies,cakes & pastries,baked goods
+meat/poultry/other animals   prepared/processed,processed meats & cold cuts,meat
+desserts/dessert sauces/toppings,dairy desserts,dairy & eggs
+nuts and seeds,nuts & seeds,snacks
+yeast breads,bread,grains & pasta
+pasta/noodles,pasta & noodles,grains & pasta
+turnovers and other grain based items,pies & tarts,baked goods
+poultry mixed dishes,prepared meals,prepared & frozen meals
+poultry products,other poultry,poultry
+fried rice and lo/chow mein,rice,grains & pasta
+herbal supplements,dietary supplements,supplements
+"doughnuts, sweet rolls, pastries",cakes & pastries,baked goods
+"lamb, goat, game",lamb & game,meat
+restaurant foods,fast foods & restaurant foods,prepared & frozen meals
+fruit drinks,fruit juices,fruits
+cookies and brownies,cookies & biscuits,baked goods
+mashed potatoes and white potato mixtures,fresh vegetables,vegetables
+bread/bakery products variety packs,bread,grains & pasta
+vegetable based products / meals,prepared meals,prepared & frozen meals
+american indian/alaska native foods,other,other
+seafood mixed dishes,prepared meals,prepared & frozen meals
+"turkey, duck, other poultry",other poultry,poultry
+rice mixed dishes,prepared meals,prepared & frozen meals
+baking accessories,other,other
+baking,baking mixes,baked goods
+cold cuts and cured meats,processed meats & cold cuts,meat
+yogurt/yogurt substitutes,yogurt,dairy & eggs
+"soups, broth based",canned soup,soups
+other fruits and fruit salads,fresh fruits,fruits
+shellfish,shellfish,fish & seafood
+pork products,pork,meat
+"beef, excludes ground",beef,meat
+grits and other cooked cereals,cereal,grains & pasta
+other dark green vegetables,fresh vegetables,vegetables
+wine,alcoholic beverages,beverages
+"beans, peas, legumes",dried legumes,legumes & beans
+"dips, gravies, other sauces",salsa & dips,condiments & sauces
+burritos and tacos,prepared meals,prepared & frozen meals
+other mexican mixed dishes,prepared meals,prepared & frozen meals
+biscuits/cookies (shelf stable),cookies & biscuits,baked goods
+liver and organ meats,organ meats,meat
+fruit  prepared/processed,canned & preserved fruits,fruits
+other starchy vegetables,fresh vegetables,vegetables
+sandwiches/filled rolls/wraps,sandwiches & wraps,prepared & frozen meals
+other red and orange vegetables,fresh vegetables,vegetables
+pork,pork,meat
+"bean, pea, legume dishes",prepared meals,prepared & frozen meals
+vitamins,dietary supplements,supplements
+not included in a food category,undefined,other
+soft drinks,soda & soft drinks,beverages
+meat and bbq sandwiches,sandwiches & wraps,prepared & frozen meals
+"pancakes, waffles, french toast",cakes & pastries,baked goods
+"soups, cream based",prepared soup,soups
+fried vegetables,fresh vegetables,vegetables
+children's nutritional supplements,dietary supplements,supplements
+oral hygiene products,other,other
+ramen and asian broth based soups,pasta & noodles,grains & pasta
+oils edible,vegetable & cooking oils,fats & oils
+grains/flour,flour & corn meal,grains & pasta
+seafood sandwiches,sandwiches & wraps,prepared & frozen meals
+ice cream and frozen dairy desserts,ice cream & frozen yogurt,dairy & eggs
+vegetables   prepared/processed,canned vegetables,vegetables
+mustard and other condiments,ketchup & mustard,condiments & sauces
+ready made combination meals,prepared meals,prepared & frozen meals
+"white potatoes, baked or boiled",fresh vegetables,vegetables
+aquatic invertebrates/fish/shellfish/seafood combination,frozen fish & seafood,fish & seafood
+"jams, syrups, toppings",jams & spreads,sweets & confectionery
+dried fruits,dried fruits,fruits
+"egg rolls, dumplings, sushi","egg rolls, dumplings & sushi",prepared & frozen meals
+nuts/seeds   prepared/processed (shelf stable),nuts & seeds,snacks
+"pasta, noodles, cooked grains",pasta & noodles,grains & pasta
+cheese/cheese substitutes,cheese,dairy & eggs
+fats and oils,vegetable & cooking oils,fats & oils
+confectionery products,candy & gummy,sweets & confectionery
+"chicken, whole pieces",chicken,poultry
+smoothies and grain drinks,other beverages,beverages
+bacon,processed meats & cold cuts,meat
+prepared/preserved foods variety packs,prepared meals,prepared & frozen meals
+citrus fruits,fresh fruits,fruits
+nachos,other snacks,snacks
+grains,other grains,grains & pasta
+lettuce and lettuce salads,salads,vegetables
+"tortilla, corn, other chips",chips & crisps,snacks
+beer,alcoholic beverages,beverages
+butter and animal fats,butter & cream,dairy & eggs
+butter/butter substitutes,butter & margarine,fats & oils
+sport and energy drinks,energy & sport drinks,beverages
+diet soft drinks,soda & soft drinks,beverages

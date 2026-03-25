@@ -1,9 +1,5 @@
-python-dotenv
+dotenv
 openai
 pandas
 jupyterlab
-numpy
-matplotlib
-rapidfuzz
-ipykernel
-ipywidgets
+duckdb
