@@ -3,3 +3,6 @@
 raw_data/*
 usda.duckdb
 usda_data_cats.csv
+data/
+*.duckdb
+__pycache__/
