@@ -151,6 +151,88 @@ Within each cluster, the canonical name is selected by:
 - Save to `usda_data_dedup_final.csv`
 
 ---
+# Prefect Data Engineering Pipeline
+
+## Overview
+
+This project includes a Prefect-based data engineering pipeline for processing and validating the food reference dataset.
+
+The pipeline transforms the existing `combined_final.csv` dataset into a validated and structured DuckDB-based data layer.
+
+---
+
+## Pipeline Steps
+
+The workflow currently performs the following steps:
+
+1. Input file validation
+2. CSV loading
+3. Basic cleaning
+   - duplicate removal
+   - removal of fully empty rows
+4. Data validation
+   - required column checks
+   - missing item name checks
+   - numeric value validation
+   - realistic nutrition range validation
+5. Export to DuckDB
+6. Export of validated CSV
+
+---
+
+## Validation Rules
+
+The current validation layer checks:
+
+- `item_name` must not be empty
+- nutrition columns must contain numeric values
+- `kcal_100g` must be between 0 and 1000
+- `fat_100g` must be between 0 and 100
+- `carbs_100g` must be between 0 and 100
+- `protein_100g` must be between 0 and 100
+
+---
+
+## Technologies Used
+
+- Prefect
+- DuckDB
+- pandas
+- Python 3.11.3
+
+---
+
+## Running the Pipeline
+
+Run the following command from the repository root:
+
+```bash
+python flows/build_food_reference_data.py
+```
+
+---
+
+## Output
+
+The pipeline generates:
+
+- validated CSV export:
+  `data/processed/combined_final_validated.csv`
+
+- DuckDB database:
+  `data/sayfit_food_pipeline.duckdb`
+
+---
+
+## Purpose
+
+The goal of this pipeline is to make the food data preparation process:
+
+- reproducible
+- observable
+- easier to validate
+- easier to extend with future dbt transformations and data versioning
+---
 
 ## Setup
 
