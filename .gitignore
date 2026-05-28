@@ -6,3 +6,6 @@ usda_data_cats.csv
 data/
 *.duckdb
 __pycache__/
+/combined_final.csv
+/off_data_clean2.csv
+/usda_final.csv
