@@ -8,3 +8,8 @@ numpy
 matplotlib
 ipykernel
 ipywidgets
+prefect==2.19.5
+griffe==0.49.0
+pydantic==2.7.4
+faiss-cpu
+sentence-transformers

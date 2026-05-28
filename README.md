@@ -151,6 +151,194 @@ Within each cluster, the canonical name is selected by:
 - Save to `usda_data_dedup_final.csv`
 
 ---
+# Prefect Data Engineering Pipeline
+
+## Overview
+
+This project includes a Prefect-based data engineering pipeline for processing, validating, transforming, and indexing the food reference dataset.
+
+The pipeline transforms the existing `combined_final.csv` dataset into a validated and structured DuckDB-based data layer, followed by dbt transformations and FAISS index generation for semantic food retrieval.
+
+---
+
+## Pipeline Architecture
+
+```text
+RAW CSV
+↓
+Prefect orchestration
+↓
+Cleaning + validation
+↓
+DuckDB storage
+↓
+dbt transformations
+↓
+Validated CSV export
+↓
+SentenceTransformer embeddings
+↓
+FAISS index generation
+```
+
+---
+
+## Pipeline Steps
+
+The workflow currently performs the following steps:
+
+1. Input file validation
+2. CSV loading
+3. Basic cleaning
+   - duplicate removal
+   - removal of fully empty rows
+4. Data validation
+   - required column checks
+   - missing item name checks
+   - numeric value validation
+   - realistic nutrition range validation
+5. Export to DuckDB
+6. dbt transformation layers
+   - staging
+   - intermediate
+   - marts
+7. Export of validated CSV
+8. SentenceTransformer embedding generation
+9. FAISS index generation
+
+---
+
+## Validation Rules
+
+The current validation layer checks:
+
+- `item_name` must not be empty
+- nutrition columns must contain numeric values
+- `kcal_100g` must be between 0 and 1000
+- `fat_100g` must be between 0 and 100
+- `carbs_100g` must be between 0 and 100
+- `protein_100g` must be between 0 and 100
+
+Invalid rows are exported separately for data quality monitoring.
+
+---
+
+## dbt Transformation Layers
+
+The dbt project currently uses a layered transformation structure:
+
+```text
+staging
+→ intermediate
+→ marts
+```
+
+Current models:
+
+- `stg_food_items`
+- `int_food_items_cleaned`
+- `mart_food_items_final`
+
+---
+
+## FAISS Index Output
+
+The pipeline generates the following retrieval artifacts for `sayfit-alpha`:
+
+```text
+data/faiss_index/food.index
+data/faiss_index/food_meta.pkl
+```
+
+The FAISS index is built using:
+
+```text
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+The metadata file maintains row-order alignment with the FAISS vectors.
+
+---
+
+## Technologies Used
+
+- Prefect
+- DuckDB
+- dbt
+- pandas
+- FAISS
+- sentence-transformers
+- Python 3.11.3
+
+---
+
+## Running the Pipeline
+
+Run the Prefect pipeline from the repository root:
+
+```bash
+python flows/build_food_reference_data.py
+```
+
+Run the FAISS index build step:
+
+```bash
+python scripts/build_faiss_index.py
+```
+
+Run dbt transformations:
+
+```bash
+cd dbt_sayfit/sayfit_food_data
+dbt run
+```
+
+---
+
+## Output
+
+The pipeline generates:
+
+### Validated CSV export
+
+```text
+data/processed/combined_final_validated.csv
+```
+
+### Rejected rows export
+
+```text
+data/processed/rejected_food_rows.csv
+```
+
+### DuckDB database
+
+```text
+data/sayfit_food_pipeline.duckdb
+```
+
+### FAISS retrieval artifacts
+
+```text
+data/faiss_index/food.index
+data/faiss_index/food_meta.pkl
+```
+
+---
+
+## Purpose
+
+The goal of this pipeline is to make the food data preparation process:
+
+- reproducible
+- observable
+- easier to validate
+- modular
+- easier to extend
+- compatible with semantic retrieval systems
+- compatible with downstream recommendation systems
+
+---
 
 ## Setup
 
