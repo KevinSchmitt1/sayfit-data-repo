@@ -382,3 +382,52 @@ The current notebooks and scripts use:
 - `matplotlib` and `numpy` support analysis and notebook EDA.
 - `ipykernel` and `ipywidgets` make the notebook environment smoother and reproducible.
 - `python-dotenv` is the correct package name for loading `.env` files in Python.
+
+---
+
+## Running with Docker
+
+Docker packages Python 3.11, all pip dependencies, and the embedding model into a single image — no virtual environment setup needed.
+
+### Build the image
+
+```bash
+docker build -t sayfit-data .
+```
+
+> The first build downloads all packages and the `all-MiniLM-L6-v2` embedding model (~90 MB). This takes a few minutes. Subsequent builds use the layer cache and are fast.
+
+### Run the full pipeline
+
+```bash
+docker run --rm -v $(pwd)/data:/app/data sayfit-data
+```
+
+This runs both steps in sequence:
+
+1. **Prefect validation flow** — validates `combined_final.csv` → writes to DuckDB → exports `data/processed/combined_final_validated.csv`
+2. **FAISS index build** — embeds food items → writes `data/faiss_index/food.index` and `data/faiss_index/food_meta.pkl`
+
+The `-v $(pwd)/data:/app/data` flag mounts your local `./data/` directory so all outputs land on the host machine. The `--rm` flag removes the stopped container automatically after it finishes.
+
+### Run a single step
+
+```bash
+# Step 1 only — validation + DuckDB
+docker run --rm -v $(pwd)/data:/app/data sayfit-data python flows/build_food_reference_data.py
+
+# Step 2 only — FAISS index (requires step 1 to have run first)
+docker run --rm -v $(pwd)/data:/app/data sayfit-data python scripts/build_faiss_index.py
+```
+
+### Output files
+
+After a successful run, `./data/` contains:
+
+| Path | Description |
+|---|---|
+| `data/processed/combined_final_validated.csv` | Validated food items used to build the index |
+| `data/processed/rejected_food_rows.csv` | Rows that failed nutrition range validation |
+| `data/sayfit_food_pipeline.duckdb` | DuckDB database with the validated food table |
+| `data/faiss_index/food.index` | FAISS vector index (consumed by `sayfit-alpha`) |
+| `data/faiss_index/food_meta.pkl` | Metadata pickle aligned row-for-row with the index |
