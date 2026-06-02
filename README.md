@@ -348,6 +348,26 @@ Create and activate a virtual environment, then install dependencies:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+dvc pull
+python flows/build_food_reference_data.py
+```
+Run the Prefect data pipeline:
+
+```bash
+python flows/build_food_reference_data.py
+```
+
+Run dbt transformations:
+
+```bash
+cd dbt_sayfit/sayfit_food_data
+dbt run
+```
+
+Build the FAISS index:
+
+```bash
+python scripts/build_faiss_index.py
 ```
 
 If you need the OpenAI-powered ontology steps later, add an `.env` file:

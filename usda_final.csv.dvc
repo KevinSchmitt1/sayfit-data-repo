@@ -1,0 +1,5 @@
+outs:
+- md5: 694eb243b40366eb55ab9f756b241c2a
+  size: 12957704
+  hash: md5
+  path: usda_final.csv
